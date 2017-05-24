@@ -4,7 +4,12 @@ public class LambdaBasic {
 
 	public static void main(String[] args) {
 		MyLambda basic = () -> System.out.println("whats up!!");
-		MyAdd addFunction = (int a, int b) -> a+b;
+		MyAdd add = (int a, int b) -> a+b;
+		
+		basic.foo();
+		
+		int result = add.addFunction(2, 3);
+		System.out.println(result);
 	}
 	
 }
